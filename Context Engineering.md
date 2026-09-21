@@ -3,9 +3,11 @@
 Context engineering is curating knowledge as a continuously maintained [[Data Engineering|data product]] that delivers the smallest useful set of relevant, trustworthy, and fresh information to an agent at the right time. The goal is to [encode expert judgement into the infrastructure to allows agents to produce correct analysis](https://x.com/sh_reya/status/2094279496497266948). Sharing context within the organization is a critical part of a company being successful with agents.
 
 - Everyone wants your context as their moat. Own context in a model-agnostic layer that outlives any agent, model, or vendor.
+  - [Context includes prompts, instructions, retrieved documents, tool calls and results, history, memory, and output schemas—not just retrieved knowledge](https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-03-own-your-context-window.md).
 - As [analysis becomes cheap, consensus becomes scarce](https://www.iandmacomber.com/blog/post-ai-data-stack). Encode expert judgment so equivalent, authorized questions produce the same definitions, evidence, and answers across models and interfaces.
 - Keep context headless and agent-readable. Expose definitions, owners, filters, code, values, lineage, and canonical sources through files and APIs rather than vendor-specific interfaces.
 - Context is finite and has diminishing returns. You need to model and clean it.
+  - Experiment with representations that improve information density and understanding.
 - Design against [three dominant failure modes: concept-to-entity ambiguity, stale knowledge, and retrieval failure](https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude). Collapse competing definitions into governed sources, update context with the systems it describes, and route the agent into a small relevant search space.
 - Every company needs to build and maintain their [[Company Knowledge Management]] system as a source of grounding for their agentic tooling.
 - There is no single "company brain" like there is no single source of truth for metrics.
